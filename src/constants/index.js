@@ -90,10 +90,6 @@ import {
       icon: reactjs,
     },
     {
-      name: "Redux Toolkit",
-      icon: redux,
-    },
-    {
       name: "Tailwind CSS",
       icon: tailwind,
     },
@@ -116,18 +112,6 @@ import {
     {
       name: "Three JS",
       icon: threejs,
-    },
-    {
-      name: "git",
-      icon: git,
-    },
-    {
-      name: "docker",
-      icon: docker,
-    },
-    {
-      name: "linux",
-      icon: linux,
     },
   ];
   
