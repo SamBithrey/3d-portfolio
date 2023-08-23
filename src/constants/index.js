@@ -1,7 +1,7 @@
 import {
     mobile,
     backend,
-    creator,
+    coffee,
     web,
     javascript,
     typescript,
@@ -13,16 +13,17 @@ import {
     nodejs,
     mongodb,
     git,
-    figma,
     docker,
-    meta,
-    starbucks,
-    tesla,
-    shopify,
-    carrent,
-    jobit,
-    tripguide,
+    lan,
     threejs,
+    golang,
+    jest,
+    graphql,
+    linux,
+    trelloclone,
+    googleshopping,
+    weatherapp,
+    nextjs,
   } from "../assets";
   
   export const navLinks = [
@@ -46,7 +47,7 @@ import {
       icon: web,
     },
     {
-      title: "React Native Developer",
+      title: "React Expert",
       icon: mobile,
     },
     {
@@ -54,8 +55,8 @@ import {
       icon: backend,
     },
     {
-      title: "Content Creator",
-      icon: creator,
+      title: "Coffee Connoisseur",
+      icon: coffee,
     },
   ];
   
@@ -77,6 +78,14 @@ import {
       icon: typescript,
     },
     {
+      name: "Go",
+      icon: golang
+    },
+    {
+      name: "NextJS",
+      icon: nextjs
+    },
+    {
       name: "React JS",
       icon: reactjs,
     },
@@ -93,8 +102,16 @@ import {
       icon: nodejs,
     },
     {
+      name: "JEST",
+      icon: jest,
+    },
+    {
       name: "MongoDB",
       icon: mongodb,
+    },
+    {
+      name: "GraphQL",
+      icon: graphql,
     },
     {
       name: "Three JS",
@@ -105,109 +122,79 @@ import {
       icon: git,
     },
     {
-      name: "figma",
-      icon: figma,
-    },
-    {
       name: "docker",
       icon: docker,
+    },
+    {
+      name: "linux",
+      icon: linux,
     },
   ];
   
   const experiences = [
     {
-      title: "React.js Developer",
-      company_name: "Starbucks",
-      icon: starbucks,
-      iconBg: "#383E56",
-      date: "March 2020 - April 2021",
-      points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
-      ],
-    },
-    {
-      title: "React Native Developer",
-      company_name: "Tesla",
-      icon: tesla,
-      iconBg: "#E6DEDD",
-      date: "Jan 2021 - Feb 2022",
-      points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
-      ],
-    },
-    {
-      title: "Web Developer",
-      company_name: "Shopify",
-      icon: shopify,
-      iconBg: "#383E56",
-      date: "Jan 2022 - Jan 2023",
-      points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
-      ],
-    },
-    {
-      title: "Full stack Developer",
-      company_name: "Meta",
-      icon: meta,
+      title: "Software Developer",
+      company_name: "Freelance",
+      icon: reactjs,
       iconBg: "#E6DEDD",
       date: "Jan 2023 - Present",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "Developed expertise in web development through self-teaching, completing multiple modules on freeCodeCamp and actively working through FullStackOpen from the University of Helsinki.",
+        "Demonstrated proficiency in JavaScript with React as the primary front-end framework for project development. Utilized Node.js and MongoDB for back-end programming and database management.",        
+        "Employed Jest and Cypress testing frameworks to effectively debug projects.",
+        "Contributed to successful completion of various app-building projects by applying acquired knowledge and skills from training.",
+        "Learning Go to be able to create a more rounded experience and integrate a back-end high level programming language to my coding base."
+      ],
+    },
+    {
+      title: "Bar Manager",
+      company_name: "Swan Inn",
+      icon: coffee,
+      iconBg: "#383E56",
+      date: "April 2022 - December 2022",
+      points: [
+        "Managed a team of bar staff and oversaw daily operations at a local country gastropub.",
+        "Ensured smooth functioning of bar equipment and provided technical assistance when necessary, including the tills.",
+        "Maintained high levels of customer satisfaction by delivering exceptional service and resolving any issues promptly.",
+      ],
+    },
+    {
+      title: "Microbiologist",
+      company_name: "Lallemand",
+      icon: lan,
+      iconBg: "#E6DEDD",
+      date: "September 2018 - April 2022",
+      points: [
+        "Conducted extensive quality control analyses on bacterial samples, generating accurate reports for the team.",
+        "Led the identification and analysis of bacterial contaminants, improving overall product quality.",
+        "Trained new team members on clearance procedures, ensuring a smooth transition into their roles.",
+        "Isolated key bacterial species for research purposes, contributing to the development of new products.",
       ],
     },
   ];
   
   const testimonials = [
     {
-      testimonial:
-        "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-      name: "Sara Lee",
-      designation: "CFO",
-      company: "Acme Co",
-      image: "https://randomuser.me/api/portraits/women/4.jpg",
-    },
-    {
-      testimonial:
-        "I've never met a web developer who truly cares about their clients' success like Rick does.",
-      name: "Chris Brown",
-      designation: "COO",
-      company: "DEF Corp",
-      image: "https://randomuser.me/api/portraits/men/5.jpg",
-    },
-    {
-      testimonial:
-        "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-      name: "Lisa Wang",
-      designation: "CTO",
-      company: "456 Enterprises",
-      image: "https://randomuser.me/api/portraits/women/6.jpg",
+      testimonial: "",
+      name: "",
+      designation: "",
+      company: "",
+      image: "",
     },
   ];
   
   const projects = [
     {
-      name: "Car Rent",
+      name: "Trello Clone",
       description:
-        "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+        "Web-based platform that allows a user to create, update and delete a todo application. Additionally a picture storage function is added to allow the user to add photos of their tasks.",
       tags: [
         {
-          name: "react",
+          name: "nextJS",
           color: "blue-text-gradient",
         },
         {
-          name: "mongodb",
+          name: "zustand",
           color: "green-text-gradient",
         },
         {
@@ -215,50 +202,50 @@ import {
           color: "pink-text-gradient",
         },
       ],
-      image: carrent,
-      source_code_link: "https://github.com/",
+      image: trelloclone,
+      source_code_link: "https://github.com/SamBithrey/trello-clone",
     },
     {
-      name: "Job IT",
+      name: "Google Shopping",
       description:
-        "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+        "Web application emulating the google shopping website. Built using a web scrapper allwoing users to filter their selections based on a variety of categories",
       tags: [
         {
-          name: "react",
+          name: "nextJS",
           color: "blue-text-gradient",
         },
         {
-          name: "restapi",
+          name: "webscrapper",
           color: "green-text-gradient",
         },
         {
-          name: "scss",
+          name: "typescript",
           color: "pink-text-gradient",
         },
       ],
-      image: jobit,
-      source_code_link: "https://github.com/",
+      image: googleshopping,
+      source_code_link: "https://github.com/SamBithrey/next-google-shopping",
     },
     {
-      name: "Trip Guide",
+      name: "Weather App",
       description:
         "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
       tags: [
         {
-          name: "nextjs",
+          name: "nextJS",
           color: "blue-text-gradient",
         },
         {
-          name: "supabase",
+          name: "graphql",
           color: "green-text-gradient",
         },
         {
-          name: "css",
+          name: "openai",
           color: "pink-text-gradient",
         },
       ],
-      image: tripguide,
-      source_code_link: "https://github.com/",
+      image: weatherapp,
+      source_code_link: "https://github.com/SamBithrey/weather-app",
     },
   ];
   
