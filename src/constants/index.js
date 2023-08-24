@@ -25,6 +25,7 @@ import {
     weatherapp,
     nextjs,
   } from "../assets";
+import { getExperiences, getServices } from "../utils/data";
   
   export const navLinks = [
     {
@@ -41,24 +42,7 @@ import {
     },
   ];
   
-  const services = [
-    {
-      title: "Web Developer",
-      icon: web,
-    },
-    {
-      title: "React Expert",
-      icon: mobile,
-    },
-    {
-      title: "Backend Developer",
-      icon: backend,
-    },
-    {
-      title: "Coffee Connoisseur",
-      icon: coffee,
-    },
-  ];
+  const services = getServices;
   
   const technologies = [
     {
@@ -115,47 +99,7 @@ import {
     },
   ];
   
-  const experiences = [
-    {
-      title: "Software Developer",
-      company_name: "Freelance",
-      icon: reactjs,
-      iconBg: "#E6DEDD",
-      date: "Jan 2023 - Present",
-      points: [
-        "Developed expertise in web development through self-teaching, completing multiple modules on freeCodeCamp and actively working through FullStackOpen from the University of Helsinki.",
-        "Demonstrated proficiency in JavaScript with React as the primary front-end framework for project development. Utilized Node.js and MongoDB for back-end programming and database management.",        
-        "Employed Jest and Cypress testing frameworks to effectively debug projects.",
-        "Contributed to successful completion of various app-building projects by applying acquired knowledge and skills from training.",
-        "Learning Go to be able to create a more rounded experience and integrate a back-end high level programming language to my coding base."
-      ],
-    },
-    {
-      title: "Bar Manager",
-      company_name: "Swan Inn",
-      icon: coffee,
-      iconBg: "#383E56",
-      date: "April 2022 - December 2022",
-      points: [
-        "Managed a team of bar staff and oversaw daily operations at a local country gastropub.",
-        "Ensured smooth functioning of bar equipment and provided technical assistance when necessary, including the tills.",
-        "Maintained high levels of customer satisfaction by delivering exceptional service and resolving any issues promptly.",
-      ],
-    },
-    {
-      title: "Microbiologist",
-      company_name: "Lallemand",
-      icon: lan,
-      iconBg: "#E6DEDD",
-      date: "September 2018 - April 2022",
-      points: [
-        "Conducted extensive quality control analyses on bacterial samples, generating accurate reports for the team.",
-        "Led the identification and analysis of bacterial contaminants, improving overall product quality.",
-        "Trained new team members on clearance procedures, ensuring a smooth transition into their roles.",
-        "Isolated key bacterial species for research purposes, contributing to the development of new products.",
-      ],
-    },
-  ];
+  const experiences = getExperiences;
   
   const testimonials = [
     {
