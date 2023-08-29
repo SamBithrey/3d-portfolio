@@ -1,10 +1,11 @@
 import { Query } from "appwrite";
 import { databases } from "../appwrite";
 
+const db = import.meta.env.VITE_APPWRITE_DATABASE
 
 const getServicesPromise = async () => {
     const data = await databases
-        .listDocuments("64e72faa0030a85613c4", "64e72fc8430123067db9")    
+        .listDocuments(db, import.meta.env.VITE_APPWRITE_SERVICES)    
 
     const documents = data.documents
 
@@ -21,7 +22,7 @@ const getServicesPromise = async () => {
 
 const getTechnologyPromise = async () => {
     const data = await databases
-        .listDocuments("64e72faa0030a85613c4", "64e76063b612f5be09cb")
+        .listDocuments(db, import.meta.env.VITE_APPWRITE_TECHNOLOGIES)
     
     const documents = data.documents
 
@@ -38,7 +39,7 @@ const getTechnologyPromise = async () => {
 
 const getExperiencePromise = async () => {
     const data = await databases
-        .listDocuments("64e72faa0030a85613c4", "64e76228513fd6608a22", [Query.orderDesc("startDate")])
+        .listDocuments(db, import.meta.env.VITE_APPWRITE_EXPERIENCE, [Query.orderDesc("startDate")])
     
     const documents = data.documents
 
@@ -57,8 +58,29 @@ const getExperiencePromise = async () => {
     return experiences
 }
 
-export const getServices = await getServicesPromise()
-export const getTechnologies = await getTechnologyPromise()
-export const getExperiences = await getExperiencePromise()
+const getProjectsPromise = async () => {
+    const data = await databases
+        .listDocuments(db, import.meta.env.VITE_APPWRITE_PROJECTS)
+    
+    const documents = data.documents
 
+    const projects = documents.reduce((acc, document) => {
+        acc.push({
+            name: document.name,
+            image: new URL(document.image),
+            company_name: document.company_name,
+            tags: document.tags,
+            source_code_link: new URL(document.source_code_link),
+            description: documents.description
+        })
+        return acc
+    }, new Array)
+
+    return projects
+}
+
+export const getServices = await getServicesPromise();
+export const getTechnologies = await getTechnologyPromise();
+export const getExperiences = await getExperiencePromise();
+export const getProjects = await getProjectsPromise();
 
